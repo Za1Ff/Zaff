@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝗭𝗮𝟭𝗙𝗳_𝘀𝘁𝗼𝗿𝗲 – Order Layanan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #ffcc00;
+        }
+        .container {
+            padding: 20px;
+        }
+        .service {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background-color: #292929;
+        }
+        .service h3 {
+            color: #ffcc00;
+        }
+        .form-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+        }
+        .form-container input, .form-container textarea, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #ffcc00;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>𝗭𝗮𝟭𝗙𝗳_𝘀𝘁𝗼𝗿𝗲</h1>
+        <p>Platform untuk layanan terbaik Anda</p>
+    </header>
+    <div class="container">
+        <section class="services">
+            <h2>Layanan Kami</h2>
+            <div class="service">
+                <h3>Gamer Seller</h3>
+                <p>Dapatkan harga terbaik dan berpatutan pada produk-produk gaming favorit Anda. Kami menjamin keaslian dan kualitas produk kami.</p>
+            </div>
+            <div class="service">
+                <h3>Promoter & Boosting</h3>
+                <p>Tingkatkan visibilitas media sosial Anda dengan layanan promosi profesional.</p>
+            </div>
+            <div class="service">
+                <h3>Buat Web</h3>
+                <p>Dapatkan akses Web untuk mempermudah distribusi layanan.</p>
+            </div>
+        </section>
+<section class="form-container">
+    <h2>Form Order</h2>
+    <form onsubmit="redirectToPayment(event)">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+        <label for="contact">Kontak (WhatsApp):</label>
+        <input type="text" id="contact" name="contact" placeholder="Masukkan nomor WhatsApp Anda" required>
+        <label for="service">Layanan yang Dipilih:</label>
+        <input type="text" id="service" name="service" placeholder="Tulis layanan yang diinginkan" required>
+        <label for="notes">Catatan Tambahan:</label>
+        <textarea id="notes" name="notes" placeholder="Tulis catatan tambahan jika ada"></textarea>
+        <button type="submit">Kirim Order</button>
+    </form>
+</section>
+<script>
+    function redirectToPayment(event) {
+        event.preventDefault();
+        // Redirect ke halaman pembayaran dengan QR Code
+        window.location.href = "payment.html";
+    }
+</script>
+</body>
+</html>
